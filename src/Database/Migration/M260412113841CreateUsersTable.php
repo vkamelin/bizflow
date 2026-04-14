@@ -24,10 +24,10 @@ final class M260412113841CreateUsersTable implements RevertibleMigrationInterfac
             'first_name' => $cb::string(100)->notNull()->comment('Имя пользователя'),
             'last_name' => $cb::string(100)->comment('Фамилия пользователя'),
             'phone' => $cb::string(11)->comment('Телефон пользователя'),
-            'status' => $cb::tinyint()->notNull()->defaultValue(1)->comment('Статус пользователя'),
+            'status' => $cb::enum(['active', 'disabled'])->notNull()->defaultValue('active')->comment('Статус пользователя'),
             'created_at' => $cb::datetime()->notNull(),
             'updated_at' => $cb::datetime()->notNull(),
-            'deleted_at' => $cb::datetime()->notNull(),
+            'deleted_at' => $cb::datetime(),
         ]);
 
         $b->createTable('auth_tokens', [
