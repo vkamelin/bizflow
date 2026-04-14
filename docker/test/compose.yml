@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      dockerfile: docker/Dockerfile
+      context: ..
+      target: dev
+      args:
+        USER_ID: ${UID}
+        GROUP_ID: ${GID}
+    env_file:
+      - path: ./test/.env
+      - path: ./test/override.env
+        required: false
+    environment:
+      DB_DSN: "mysql:host=mysql;port=3306;dbname=${MYSQL_DATABASE:-app}"
+      DB_USER: "${MYSQL_USER:-app}"
+      DB_PASSWORD: "${MYSQL_PASSWORD:-secret}"
+      REDIS_DSN: "redis://redis:6379"
+    volumes:
+      - ../:/app
+      - ../runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+    tty: true

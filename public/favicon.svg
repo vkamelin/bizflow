@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <svg:g
+     id="g5"
+     transform="matrix(16,0,0,16,0,-24.023916)">
+    <svg:g
+       fill="none"
+       id="g4">
+      <svg:path
+         fill="#8c5543"
+         d="m 2,15 h 28 v 13 a 2,2 0 0 1 -2,2 H 4 A 2,2 0 0 1 2,28 Z"
+         id="path1" />
+      <svg:path
+         fill="#6d4534"
+         d="M 11.1,9 H 4 a 2,2 0 0 0 -2,2 v 4 a 4,4 0 0 0 4,4 h 20 a 4,4 0 0 0 4,-4 V 11 A 2,2 0 0 0 28,9 h -7.1 a 5.002,5.002 0 0 0 -9.8,0 m 2.07,0 a 3.001,3.001 0 0 1 5.66,0 z"
+         id="path2" />
+      <svg:path
+         fill="#d3883e"
+         d="m 13,19 3,-1 3,1 v 2 a 1,1 0 0 1 -1,1 h -4 a 1,1 0 0 1 -1,-1 z"
+         id="path3" />
+      <svg:path
+         fill="#e19747"
+         d="m 13,18 a 1,1 0 0 1 1,-1 h 4 a 1,1 0 0 1 1,1 v 1 h -6 z"
+         id="path4" />
+    </svg:g>
+  </svg:g>
+</svg:svg>
