@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Web\NotFound\NotFoundHandler;
-use Psr\SimpleCache\CacheInterface;
+use App\Presentation\Http\NotFound\NotFoundHandler;
 use Yiisoft\Csrf\CsrfTokenMiddleware;
 use Yiisoft\Definitions\DynamicReference;
 use Yiisoft\Definitions\Reference;

@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Web\Shared\Layout\Main\MainAsset;
-use Yiisoft\Html\Html;
+use App\Presentation\Http\Shared\Layout\Main\MainAsset;
 
 /**
  * @var \App\Shared\ApplicationParams $applicationParams

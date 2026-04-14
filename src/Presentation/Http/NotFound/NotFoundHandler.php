@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Web\NotFound;
+namespace App\Presentation\Http\NotFound;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
