@@ -21,7 +21,7 @@ final class M260412113841CreateUsersTable implements RevertibleMigrationInterfac
             'id' => $cb::uuidPrimaryKey()->comment('Идентификатор пользователя'),
             'email' => $cb::string(320)->notNull()->unique()->comment('Email пользователя'),
             'password_hash' => $cb::string()->notNull()->comment('Хеш пароля'),
-            'first_name' => $cb::string(100)->notNull()->comment('Имя пользователя'),
+            'first_name' => $cb::string(100)->comment('Имя пользователя'),
             'last_name' => $cb::string(100)->comment('Фамилия пользователя'),
             'phone' => $cb::string(11)->comment('Телефон пользователя'),
             'status' => $cb::enum(['active', 'disabled'])->notNull()->defaultValue('active')->comment('Статус пользователя'),
